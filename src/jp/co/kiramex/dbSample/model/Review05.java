@@ -35,7 +35,9 @@ public class Review05 {
             System.out.print("検索キーワードを入力してください>");
             String input =  keyIn();
 
-            pstmt.setString(1,input);
+            int n= Integer.parseInt(input);
+            pstmt.setInt(1,n);
+
             rs = pstmt.executeQuery();
 
             // 7. 結果を表示する
